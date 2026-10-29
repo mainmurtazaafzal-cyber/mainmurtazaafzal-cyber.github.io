@@ -1,8 +1,0 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Ghost Agent SSRF test page</title>
-<meta http-equiv="refresh" content="2;url=http://169.254.169.254/latest/meta-data/">
-<meta name="robots" content="noindex"></head><body>
-<p>Controlled test page for the Ghost Agent scanner: it tries to send the browser to private/internal addresses. A safe scanner must refuse.</p>
-<img src="http://10.0.0.1/ssrf-img.png" alt="">
-<a href="http://127.0.0.1:8000/api/health">internal link</a>
-<script>setTimeout(function(){location.href="http://127.0.0.1:8080/ssrf-js"},500)</script>
-</body></html>
